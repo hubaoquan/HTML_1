@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+        	作者：971281722@qq.com
+        	时间：2017-03-08
+        	描述：这里我总结一下这个head元素有什么用处：
+        	    <head> 标签用于定义文档的头部，它是所有头部元素的容器。
+        	    <head> 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等等。
+                                文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。
+                                绝大多数文档头部包含的数据都不会真正作为内容显示给读者。
+                               下面这些标签可用在 head 部分：<base>, <link>, <meta>, <script>, <style>, 以及 <title>。
+                <title> 定义文档的标题，它是 head 部分中唯一必需的元素。
+        -->
+		<meta charset="utf-8">
+		<title>任务一：零基础HTML编码</title>
+	</head>
+	<body>
+		<a href=""></a>
+		<!--
+        	作者：971281722@qq.com
+        	时间：2017-03-08
+        	描述：
+        	body 元素定义文档的主体。
+            body 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等。）
+        -->
+		<h1>一级标题</h1>
+		<h2>二级标题</h2>
+		<h3>三级标题</h3>
+		<h4>四级标题</h4>
+		<h5>五级标题</h5>
+		<h6>六级标题</h6>
+		<p>可以发现正文字体大小是五级标题字体大小。
+		</p>
+		<!--
+        	作者：971281722@qq.com
+        	时间：2017-03-08
+        	描述：<h1> - <h6> 标签可定义标题。<h1> 定义最大的标题。<h6> 定义最小的标题。
+        -->
+         <h3>接下来我将总结一下HTML中常用的标签包括HTML5：</h3>
+         <h5>1.a标签用于定义一个超链接</h5>
+         <a href="http://baoquanhu.cn">我的个人博客</a>
+         <h5>2.HTML 图像是通过 img 标签进行定义的。</h5>
+         <img  src="http://www.baidu.com/img/38270_b8c2a909848579fb12dc61f16ea9cde2.gif" width="270" height="129" >
+         <h5>3.audio标签</h5>
+        <audio controls="controls" >
+        <source src="http://111.20.250.45/m10.music.126.net/20170308223621/8a4da0394ef4a7cecbe019f27a4eaa75/ymusic/78b6/ed8b/68c4/c186eb97c6d2438317f6ce1039ae8b3d.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+        </audio>
+        <br>
+        <h5>4.文本粗体用b标签</h5>
+        <h5>5.br标签没有结束符，表示换行</h5>
+        <h5>6.button标签表示按钮</h5>
+        <button type="button">Click Me!</button>
+        <div>
+          <b>定义和用法</b>
+
+		<p>&lt;button&gt; 标签定义一个按钮。</p>
+		
+		<p>在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处。</p>
+		
+		<p>&lt;button&gt; 控件 与 &lt;input type="button"&gt; 相比，提供了更为强大的功能和更丰富的内容。&lt;button&gt; 与 &lt;/button&gt; 标签之间的所有内容都是按钮的内容，其中包括任何可接受的正文内容，比如文本或多媒体内容。例如，我们可以在按钮中包括一个图像和相关的文本，用它们在按钮中创建一个吸引人的标记图像。</p>
+		
+		<p>唯一禁止使用的元素是图像映射，因为它对鼠标和键盘敏感的动作会干扰表单按钮的行为。</p>
+		
+		<p>请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit"。</p>
+       </div>
+       <h5>7.iframe </h5>
+          iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。<br>比如利用iframe插入视频，但是有个缺点是iframe框架无法通过属性禁止自动播放，需要传参数给视频源站才能，或者通过JS才能禁止自动播放，很让人头疼。而video标签可以控制资源是否可以自动播放。<br>
+          
+          
+         <!-- <iframe src="http://111.20.250.39/v4.music.126.net/20170309103030/9658a44a904f2ff78aa304ec56064d4f/web/cloudmusic/MGRmYDE5YCAyYGAhICE1MA==/mv/5391192/db99e6e3d7dc73afb57b190e94619abc.mp4" width="780" height="500" autoplay="false"></iframe> -->
+         <div class="myvideo"><video controls="controls" width="330" height="240"><source src="http://111.20.250.39/v4.music.126.net/20170309103030/9658a44a904f2ff78aa304ec56064d4f/web/cloudmusic/MGRmYDE5YCAyYGAhICE1MA==/mv/5391192/db99e6e3d7dc73afb57b190e94619abc.mp4" type="video/mp4" /></video></div>
+         <h4>标签实在太多，就不一一列举了，具体有哪些请看下边的列表,资料来自w3school，源站相对地址已经被我替换为绝对地址了，可以点击访问。：</h4>
+         <ul>
+			<li><a href="http://www.w3school.com.cn/tags/tag_comment.asp" title="HTML <!--> 标签">&lt;!--&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_doctype.asp" title="HTML <!DOCTYPE> 标签">&lt;!DOCTYPE&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_a.asp" title="HTML <a> 标签">&lt;a&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_abbr.asp" title="HTML <abbr> 标签">&lt;abbr&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_acronym.asp" title="HTML <acronym> 标签">&lt;acronym&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_address.asp" title="HTML <address> 标签">&lt;address&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_applet.asp" title="HTML <applet> 标签">&lt;applet&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_area.asp" title="HTML <area> 标签">&lt;area&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_article.asp" title="HTML <article> 标签">&lt;article&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_aside.asp" title="HTML <aside> 标签">&lt;aside&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_audio.asp" title="HTML <audio> 标签">&lt;audio&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_b.asp" title="HTML <b> 标签">&lt;b&gt;</a></li>
+			<li class="currentLink"><a href="http://www.w3school.com.cn/tags/tag_base.asp" title="HTML <base> 标签">&lt;base&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_basefont.asp" title="HTML <basefont> 标签">&lt;basefont&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_bdi.asp" title="HTML <bdi> 标签">&lt;bdi&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_bdo.asp" title="HTML <bdo> 标签">&lt;bdo&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_big.asp" title="HTML <big> 标签">&lt;big&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_blockquote.asp" title="HTML <blockquote> 标签">&lt;blockquote&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_body.asp" title="HTML <body> 标签">&lt;body&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_br.asp" title="HTML <br> 标签">&lt;br&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_button.asp" title="HTML <button> 标签">&lt;button&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_canvas.asp" title="HTML <canvas> 标签">&lt;canvas&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_caption.asp" title="HTML <caption> 标签">&lt;caption&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_center.asp" title="HTML <center> 标签">&lt;center&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_cite.asp" title="HTML <cite> 标签">&lt;cite&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <code> 标签">&lt;code&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_col.asp" title="HTML <col> 标签">&lt;col&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_colgroup.asp" title="HTML <colgroup> 标签">&lt;colgroup&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_command.asp" title="HTML <command> 标签">&lt;command&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_datalist.asp" title="HTML <datalist> 标签">&lt;datalist&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_dd.asp" title="HTML <dd> 标签">&lt;dd&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_del.asp" title="HTML <del> 标签">&lt;del&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_details.asp" title="HTML <details> 标签">&lt;details&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <dfn> 标签">&lt;dfn&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_dialog.asp" title="HTML <dialog> 标签">&lt;dialog&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_dir.asp" title="HTML <dir> 标签">&lt;dir&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_div.asp" title="HTML <div> 标签">&lt;div&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_dl.asp" title="HTML <dl> 标签">&lt;dl&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_dt.asp" title="HTML <dt> 标签">&lt;dt&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <em> 标签">&lt;em&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_embed.asp" title="HTML <embed> 标签">&lt;embed&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_fieldset.asp" title="HTML <fieldset> 标签">&lt;fieldset&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_figcaption.asp" title="HTML <figcaption> 标签">&lt;figcaption&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_figure.asp" title="HTML <figure> 标签">&lt;figure&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_font.asp" title="HTML <font> 标签">&lt;font&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_footer.asp" title="HTML <footer> 标签">&lt;footer&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_form.asp" title="HTML <form> 标签">&lt;form&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_frame.asp" title="HTML <frame> 标签">&lt;frame&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_frameset.asp" title="HTML <frameset> 标签">&lt;frameset&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_hn.asp" title="HTML <h1> - <h6> 标签">&lt;h1&gt; - &lt;h6&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_head.asp" title="HTML <head> 标签">&lt;head&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_header.asp" title="HTML <header> 标签">&lt;header&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_hr.asp" title="HTML <hr> 标签">&lt;hr&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_html.asp" title="HTML <html> 标签">&lt;html&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_i.asp" title="HTML <i> 标签">&lt;i&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_iframe.asp" title="HTML <iframe> 标签">&lt;iframe&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_img.asp" title="HTML <img> 标签">&lt;img&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_input.asp" title="HTML <input> 标签">&lt;input&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_ins.asp" title="HTML <ins> 标签">&lt;ins&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <kbd> 标签">&lt;kbd&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_keygen.asp" title="HTML <keygen> 标签">&lt;keygen&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_label.asp" title="HTML <label> 标签">&lt;label&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_legend.asp" title="HTML <legend> 标签">&lt;legend&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_li.asp" title="HTML <li> 标签">&lt;li&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_link.asp" title="HTML <link> 标签">&lt;link&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_main.asp" title="HTML <main> 标签">&lt;main&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_map.asp" title="HTML <map> 标签">&lt;map&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_mark.asp" title="HTML <mark> 标签">&lt;mark&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_menu.asp" title="HTML <menu> 标签">&lt;menu&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_menuitem.asp" title="HTML <menuitem> 标签">&lt;menuitem&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_meta.asp" title="HTML <meta> 标签">&lt;meta&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_meter.asp" title="HTML <meter> 标签">&lt;meter&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_nav.asp" title="HTML <nav> 标签">&lt;nav&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_noframes.asp" title="HTML <noframes> 标签">&lt;noframes&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_noscript.asp" title="HTML <noscript> 标签">&lt;noscript&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_object.asp" title="HTML <object> 标签">&lt;object&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_ol.asp" title="HTML <ol> 标签">&lt;ol&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_optgroup.asp" title="HTML <optgroup> 标签">&lt;optgroup&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_option.asp" title="HTML <option> 标签">&lt;option&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_output.asp" title="HTML <output> 标签">&lt;output&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_p.asp" title="HTML <p> 标签">&lt;p&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_param.asp" title="HTML <param> 标签">&lt;param&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_pre.asp" title="HTML <pre> 标签">&lt;pre&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_progress.asp" title="HTML <progress> 标签">&lt;progress&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_q.asp" title="HTML <q> 标签">&lt;q&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_rp.asp" title="HTML <rp> 标签">&lt;rp&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_rt.asp" title="HTML <rt> 标签">&lt;rt&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_ruby.asp" title="HTML <ruby> 标签">&lt;ruby&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_s.asp" title="HTML <s> 标签">&lt;s&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <samp> 标签">&lt;samp&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_script.asp" title="HTML <script> 标签">&lt;script&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_section.asp" title="HTML <section> 标签">&lt;section&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_select.asp" title="HTML <select> 标签">&lt;select&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_small.asp" title="HTML <small> 标签">&lt;small&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_source.asp" title="HTML <source> 标签">&lt;source&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_span.asp" title="HTML <span> 标签">&lt;span&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_strike.asp" title="HTML <strike> 标签">&lt;strike&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <strong> 标签">&lt;strong&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_style.asp" title="HTML <style> 标签">&lt;style&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_sub.asp" title="HTML <sub> 标签">&lt;sub&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_summary.asp" title="HTML <summary> 标签">&lt;summary&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_sup.asp" title="HTML <sup> 标签">&lt;sup&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_table.asp" title="HTML <table> 标签">&lt;table&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_tbody.asp" title="HTML <tbody> 标签">&lt;tbody&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_td.asp" title="HTML <td> 标签">&lt;td&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_textarea.asp" title="HTML <textarea> 标签">&lt;textarea&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_tfoot.asp" title="HTML <tfoot> 标签">&lt;tfoot&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_th.asp" title="HTML <th> 标签">&lt;th&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_thead.asp" title="HTML <thead> 标签">&lt;thead&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_time.asp" title="HTML <time> 标签">&lt;time&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_title.asp" title="HTML <title> 标签">&lt;title&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_tr.asp" title="HTML <tr> 标签">&lt;tr&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_track.asp" title="HTML <track> 标签">&lt;track&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_tt.asp" title="HTML <tt> 标签">&lt;tt&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_u.asp" title="HTML <u> 标签">&lt;u&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_ul.asp" title="HTML <ul> 标签">&lt;ul&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_phrase_elements.asp" title="HTML <var> 标签">&lt;var&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_video.asp" title="HTML <video> 标签">&lt;video&gt;</a></li>
+			<li><a href="http://www.w3school.com.cn/tags/tag_wbr.asp" title="HTML <wbr> 标签">&lt;wbr&gt;</a></li>
+			</ul>
+          
+	</body>
+</html>
