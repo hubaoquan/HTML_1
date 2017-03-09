@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>任务二_零基础HTML及CSS编码（一）</title>
+	</head>
+	<body>
+		<h2>一.CSS简介</h2>
+		<p>CSS 指层叠样式表 (Cascading Style Sheets)<br>
+                      样式定义如何显示 HTML 元素<br>
+                       样式通常存储在样式表中<br>
+			把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题<br>
+			外部样式表可以极大提高工作效率<br>
+			外部样式表通常存储在 CSS 文件中<br>
+			多个样式定义可层叠为一个</p>
+		<h2>二.CSS语法</h2>
+		<p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明。</p>
+		<img src="http://www.w3school.com.cn/i/ct_css_selector.gif" />
+		<br>
+		<h2>三.属性选择器</h2>
+		<p>举例说明各种选择器的用法：<br>
+		     <b> 格式一：E[attr]{rules}</b> <font color="darkred"> 选择具有attr的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式二：E[attr=value]{rules}</b> <font color="darkred"> 选择具有attr属性，并且属性值等于value的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式三：E[attr~=value]{rules}</b> <font color="darkred"> 选择具有attr属性并且属性值中包含多个字符列表，其中任意字符等于value的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式四：E[attr|=value]{rules}</b> <font color="darkred"> 选择具有attr属性的E元素，并且属性值为用连字符分隔的字符列表，且以value开始的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式五：E[attr^=value]{rules}</b> <font color="darkred"> 选择具有attr属性的E元素，并且属性值以value开始的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式六：E[attr$=value]{rules}</b> <font color="darkred"> 选择具有attr属性的E元素，并且属性值以value结尾的E元素，并应用rules指定样式 </font> <br>
+		     <b> 格式七：E[attr*=value]{rules}</b> <font color="darkred"> 选择具有attr属性的E元素，并且属性值为中包含value的E元素，并应用rules指定样式 </font> <br>
+		     
+			*[title] {color:red;} /*样式1*/<br>
+			a[href]{font-size:25px;} /*样式2*/<br>
+			a[href][id]{background-color:yellow} /*样式3*/<br>
+			a[href="http://baoquanhu.cn"]{font-weight:bolder} /*样式4*/<br>
+			span[title~=big]{margin-left:20px;} /*样式5*/<br>
+			span[title|=big]{margin-left:40px} /*样式6*/<br>
+		</p>
+			<style>
+			*[title] {color:red;} /*样式1*/
+			a[href]{font-size:25px;} /*样式2*/
+			a[href][id]{background-color:yellow} /*样式3*/
+			a[href="http://baoquanhu.cn"]{font-weight:bolder} /*样式4*/
+			span[title~=big]{margin-left:20px;} /*样式5*/
+			span[title|=big]{margin-left:40px} /*样式6*/
+			</style>
+			<h3>第一种应用格式</h3>
+			<p><span title="a">Hello world</span> (应用了样式：1)</p>
+			<p><a title="b" href="#">Hello world</a> (应用了样式：1,2)</p>
+			<p><a title="c" href="#" id="a1">Hello world</a> (应用了样式：1,2,3)</p>
+			<h3>第二种应用格式</h3>
+			<p><a href="http://baoquanhu.cn">Hello world</a> (应用了样式：4)</p> 
+			<h3>第三种应用格式</h3>
+			<p><span title="big bang">Hello world</span> (应用了样式：5)</p>
+			<h3>第四种应用格式</h3>
+			<p><span title="big-bang">Hello world</span> (应用了样式：6)</p>
+         <h2>四.类选择器</h2>
+		    <p>类选择器允许以一种独立于文档元素的方式来指定样式。<br>
+                        该选择器可以单独使用，也可以与其他元素结合使用。<br>
+			<b>提示</b>：只有适当地标记文档后，才能使用这些选择器，所以使用这两种选择器通常需要先做一些构想和计划。<br>
+			要应用样式而不考虑具体设计的元素，最常用的方法就是使用类选择器。</p><br>
+			<h3>①直接为某元素指定样式类</h3>
+			    例如：.highlight{background-color:yellow;}
+				<style>
+				.highlight{background-color:yellow;}
+				</style>
+				<h1 class="highlight">h1元素应用样式</h1> 
+				<p class="highlight">p元素应用样式<p>
+				<p>p元素不应用样式</p>
+			<h3>②类选择器组合元素使用</h3>
+			   例如：<br>h1.highlight{background-color:yellow;}<br>
+				  p.highlight{background-color:blue;}
+				<style>
+				h1.highlight{background-color:yellow;}
+				p.highlight{background-color:blue;}
+				</style>
+				<h1 class="highlight">h1元素应用样式</h1> 
+				<p class="highlight">p元素应用样式<p>
+                <p>p元素不应用样式</p>
+            <h3>③多个类选择器组合使用</h3>
+                                例如：<br>
+					.highlight{background-color:yellow;}<br>
+					.bigfont{font-size:30px;}<br>
+					<style>
+					.highlight{background-color:yellow;}
+					.bigfont{font-size:30px;}
+					</style>
+					<h1 class="highlight bigfont">h1元素应用样式</h1> 
+					<p class="bigfont highlight">p元素应用样式<p>
+					<p>p元素不应用样式</p>
+            <h2>五.伪类选择器</h2>
+                CSS 伪类用于向某些选择器添加特殊的效果。<br>
+                
+                <h3>1.锚伪类</h3>
+                
+                    <p>在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，<br>这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。<br>
+					a:link {color: #FF0000}		/* 未访问的链接 */<br>
+					a:visited {color: #00FF00}	/* 已访问的链接 */<br>
+					a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */<br>
+					a:active {color: #0000FF}	/* 选定的链接 */</p>
+					
+				<h3>2.first-child,last-child,nth-child,nth-last-child伪类</h3>
+				
+					<ul>
+						<li>first-child:用于选择某元素的第一个子元素</li>
+						<li>last-child:用于选择某元素的最后一个元素</li>
+						<li>nth-child:用于选择某元素指定正顺序的子元素</li>
+						<li>nth-last-child:用于选择某元素倒序书顺序的元素</li>
+					</ul>
+					
+					    <font color="red" size="5">例如：</font></font><br>
+					    /*对某元素第一个P元素应用样式，文字向右平移20像素*/<br>
+						p:first-child{margin-left:20px} <br>
+						/*对某元素最后一个P元素应用样式，字体大小为30像素*/<br>
+						p:last-child{font-size: 30px;} <br>
+						/*对某元素正数第3个LI元素应用样式，文字向右平移20像素*/<br>
+						li:nth-child(3){margin-left:20px} <br>
+						/*对某元素倒数第2个LI元素应用样式，字体大小为30像素*/<br>
+						li:nth-last-child(2){font-size:30px;} <br>
+						<style>
+						/*对某元素第一个P元素应用样式，文字向右平移20像素*/
+						p:first-child{margin-left:20px} 
+						/*对某元素最后一个P元素应用样式，字体大小为30像素*/
+						p:last-child{font-size: 30px;} 
+						/*对某元素正数第3个LI元素应用样式，文字向右平移20像素*/
+						li:nth-child(3){margin-left:20px} 
+						/*对某元素倒数第2个LI元素应用样式，字体大小为30像素*/
+						li:nth-last-child(2){font-size:30px;} 
+						</style>
+						<p>独立的P元素</p>
+						<div>
+							<p>第一个P元素</p>
+							<p>第二个P元素</p>
+							<p>第三个P元素</p>
+						</div>
+						<ul>
+							<li>第一个LI元素</li>
+							<li>第二个LI元素</li>
+							<li>第三个LI元素</li>
+							<li>第四个LI元素</li>
+							<li>第五个LI元素</li>
+							<li>第六个LI元素</li>
+							<li>第七个LI元素</li>
+							<li>第八个LI元素</li>
+						</ul>
+		                    <p>对于nth-child和nth-last-child来说不经可以使用指定序号还可以使用odd和even来选择序号，<br>odd表示序号为奇数的，even表示为偶数的序号。</p>
+		                    <font color="red" size="5"> 例如： </font>
+		                                         表格相邻两行设置不同的颜色：
+		                    <style>
+							tr:nth-child(even){background-color:gray}
+							</style>
+							<table border=1 width=100%>
+								<tr><td>第一行</td></tr>
+								<tr><td>第二行</td></tr>
+								<tr><td>第三行</td></tr>
+								<tr><td>第四行</td></tr>
+								<tr><td>第五行</td></tr>
+								<tr><td>第六行</td></tr>
+							</table>
+				<h3>3.E:hover,E:active和E:focus选择器</h3>
+				    <ul>
+				    	<li>E:hover:用于设定当鼠标悬浮于所选择的元素时使用的样式</li>
+				    	<li>E:active用于设置当鼠标点击时的样式</li>
+				    	<li>E:focus用于设置元素获取焦点时的样式</li>
+				    </ul>
+				    <font color="red" size="5">例如：</font><br>
+					    /*当鼠标悬停于div元素上时，为div元素增加边框*/<br>
+						div:hover{border:1px solid blue;} <br>
+						/*当鼠标点击div元素时，div元素背景色设置为绿色*/<br>
+						div:active{background-color:green} <br>
+						/*当input元素获得焦点时，input元素背景色设置为灰色*/<br>
+						input:focus{background-color:gray} <br>
+						<style>
+						/*当鼠标悬停于div元素上时，为div元素增加边框*/
+						div:hover{border:1px solid blue;} 
+						/*当鼠标点击div元素时，div元素背景色设置为绿色*/
+						div:active{background-color:green} 
+						/*当input元素获得焦点时，input元素背景色设置为灰色*/
+						input:focus{background-color:gray} 
+						</style>
+						<div>
+						<p>输入你的姓名：<input type="text"/></p>
+						</div>
+						</table>
+						</div>
+
+
+			<h2>六、控制页面样式</h2>
+			      <h3>1.控制圆角边框样式</h3>
+			            border:solid 3px; /*显示边框且边框宽度为3像素*/<br>
+						padding:10px; /*边框上下左右与内部文字距离10像素*/<br>
+						border-top-left-radius:10px; /*设置左上圆角半径为10像素*/<br>
+						border-top-right-radius:20px; /*设置右上圆角半径为20像素*/<br>
+						border-bottom-right-radius:30px; /*设置右下圆角半径为30像素*/<br>
+						border-bottom-left-radius:40px; /*设置左下圆角半径为40像素*/<br>
+			       <style>
+					div /*页面中所有div元素应用的样式*/
+					{
+						border:solid 3px; /*显示边框且边框宽度为3像素*/
+						padding:10px; /*边框上下左右与内部文字距离10像素*/
+						border-top-left-radius:10px; /*设置左上圆角半径为10像素*/
+						border-top-right-radius:20px; /*设置右上圆角半径为20像素*/
+						border-bottom-right-radius:30px; /*设置右下圆角半径为30像素*/
+						border-bottom-left-radius:40px; /*设置左下圆角半径为40像素*/
+					}
+					</style>
+				
+					<div>
+						<p>这个DIV的四个角将分别设置为不同的样式</p>
+						<p>这个DIV的四个角将分别设置为不同的样式</p>
+						<p>这个DIV的四个角将分别设置为不同的样式</p>
+					</div>
+					
+					
+					<h3>2.控制背景样式</h3>
+			       		div /*页面中所有div元素应用的样式*/<br>
+						{<br>
+							padding : 30px;<br>
+							border:dashed 10px yellow; /*设置边框样式*/<br>
+							background-color:red; /*设置背景颜色*/<br>
+						}<br>
+						div[id="div1"]<br>
+						{<br>
+							-webkit-background-clip:border; /*设置背景包括边框*/<br>
+						}<br>
+						div[id="div2"]<br>
+						{<br>
+							-webkit-background-clip:padding; /*设置背景不包括边框*/<br>
+						}<br>
+						
+
+
+
+				
+
+		
+	</body>
+</html>
